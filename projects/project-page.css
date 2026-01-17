@@ -1,0 +1,355 @@
+/* Project Page Specific Styles */
+
+/* Navigation */
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #eeeeee;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+#nav .actions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav .button {
+    background-color: #18bfef;
+    color: white !important;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+#nav .button:hover {
+    background-color: #0ea5d1;
+}
+
+/* Adjust main content to account for fixed nav */
+#main {
+    margin-top: 5rem;
+}
+
+/* Project Detail Sections */
+.project-detail {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.project-section:last-of-type {
+    border-bottom: none;
+}
+
+.project-section h2 {
+    color: #18bfef;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+}
+
+.project-section h3 {
+    color: #333;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+/* Responsibilities and Achievements Lists */
+.responsibilities,
+.achievements {
+    list-style: none;
+    padding: 0;
+}
+
+.responsibilities li,
+.achievements li {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.responsibilities li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #18bfef;
+    font-weight: bold;
+}
+
+.achievements li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #18bfef;
+    font-weight: bold;
+}
+
+/* Artists Grid */
+.artists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.artist-card {
+    background: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.artist-card h3 {
+    color: #18bfef;
+    margin-bottom: 0.75rem;
+}
+
+/* Tour Stops */
+.tour-stops {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.stop-card {
+    background: linear-gradient(135deg, #18bfef 0%, #0ea5d1 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.stop-card:hover {
+    transform: scale(1.05);
+}
+
+.stop-card h3 {
+    color: white;
+    margin-bottom: 0.75rem;
+}
+
+/* Project Highlights */
+.project-highlights,
+.focus-areas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.highlight-card,
+.focus-card {
+    background: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover,
+.focus-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-card h3,
+.focus-card h3 {
+    color: #18bfef;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+/* Project Phases */
+.project-phases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.phase-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+    border: 2px solid #18bfef;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.phase-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(24, 191, 239, 0.2);
+}
+
+.phase-card h3 {
+    color: #18bfef;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+/* Artist/Organization Profile */
+.artist-profile,
+.org-profile {
+    background: #f8f8f8;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #18bfef;
+}
+
+.artist-profile p,
+.org-profile p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.artist-profile p:last-child,
+.org-profile p:last-child {
+    margin-bottom: 0;
+}
+
+/* Image Gallery */
+.image-gallery {
+    margin-top: 1.5rem;
+}
+
+.gallery-placeholder {
+    background: linear-gradient(135deg, #f8f8f8 0%, #eeeeee 100%);
+    border: 2px dashed #cccccc;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 8px;
+    color: #888;
+    font-size: 1.2rem;
+}
+
+/* When images are added, use this grid layout */
+.image-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+/* Project Info Grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.info-item {
+    background: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.info-item h3 {
+    color: #18bfef;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.info-item p {
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 980px) {
+    #nav {
+        padding: 1rem;
+    }
+    
+    #main {
+        margin-top: 4rem;
+    }
+    
+    .artists-grid,
+    .project-highlights,
+    .focus-areas,
+    .project-phases,
+    .tour-stops {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .project-section {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .project-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .artist-card,
+    .highlight-card,
+    .focus-card,
+    .phase-card,
+    .info-item {
+        padding: 1rem;
+    }
+    
+    .artist-profile,
+    .org-profile {
+        padding: 1.5rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    #nav {
+        position: relative;
+        box-shadow: none;
+        page-break-after: avoid;
+    }
+    
+    .project-section {
+        page-break-inside: avoid;
+    }
+    
+    .button {
+        display: none;
+    }
+}
