@@ -88,13 +88,19 @@
                     </ul>
                 </section>
 
-                <!-- Image Gallery Placeholder -->
+                <!-- Image Gallery -->
                 <section class="project-section">
                     <h2>Project Gallery</h2>
                     <div class="image-gallery">
-                        <div class="gallery-placeholder">
-                            <p>📸 Tour and project photos coming soon</p>
+                        <div class="image-gallery-grid">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'%3E%3Crect fill='%2318bfef' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='32' fill='white'%3ETour Performance%3C/text%3E%3C/svg%3E" alt="LAMII WONDER live performance on tour" class="gallery-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'%3E%3Crect fill='%230ea5d1' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='32' fill='white'%3EStudio Sessions%3C/text%3E%3C/svg%3E" alt="Recording session for upcoming release" class="gallery-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'%3E%3Crect fill='%2318bfef' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='32' fill='white'%3EPromo Activities%3C/text%3E%3C/svg%3E" alt="Behind the scenes promotional content creation" class="gallery-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'%3E%3Crect fill='%230ea5d1' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='32' fill='white'%3EVenue Setup%3C/text%3E%3C/svg%3E" alt="Venue preparation for tour stop" class="gallery-image">
                         </div>
+                        <p style="margin-top: 1rem; color: #888; font-size: 0.9rem; font-style: italic;">
+                            📸 Click any image to view in full-screen. Use arrow keys or navigation buttons to browse through the gallery.
+                        </p>
                     </div>
                 </section>
 
@@ -151,6 +157,7 @@
     </div>
 
     <!-- Scripts -->
+    <script src="../gallery.js"></script>
     <script>
         window.addEventListener('load', function() {
             document.body.classList.remove('is-preload');
