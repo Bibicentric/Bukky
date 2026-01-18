@@ -45,8 +45,8 @@
 }
 
 .project-section {
-    margin-bottom: 3rem;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
     border-bottom: 1px solid #eeeeee;
 }
 
@@ -56,13 +56,13 @@
 
 .project-section h2 {
     color: #18bfef;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-size: 1.75rem;
 }
 
 .project-section h3 {
     color: #333;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     font-size: 1.25rem;
 }
 
@@ -76,7 +76,7 @@
 .responsibilities li,
 .achievements li {
     padding-left: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     position: relative;
     line-height: 1.6;
 }
@@ -101,13 +101,13 @@
 .artists-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .artist-card {
     background: #f8f8f8;
-    padding: 1.5rem;
+    padding: 1.25rem;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -119,21 +119,21 @@
 
 .artist-card h3 {
     color: #18bfef;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Tour Stops */
 .tour-stops {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .stop-card {
     background: linear-gradient(135deg, #18bfef 0%, #0ea5d1 100%);
     color: white;
-    padding: 1.5rem;
+    padding: 1.25rem;
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
@@ -144,7 +144,7 @@
 
 .stop-card h3 {
     color: white;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Project Highlights */
@@ -152,14 +152,14 @@
 .focus-areas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .highlight-card,
 .focus-card {
     background: #f8f8f8;
-    padding: 1.5rem;
+    padding: 1.25rem;
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -174,7 +174,7 @@
 .highlight-card h3,
 .focus-card h3 {
     color: #18bfef;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
 
@@ -182,14 +182,14 @@
 .project-phases {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .phase-card {
     background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
     border: 2px solid #18bfef;
-    padding: 1.5rem;
+    padding: 1.25rem;
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -202,7 +202,7 @@
 
 .phase-card h3 {
     color: #18bfef;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
 
@@ -210,14 +210,14 @@
 .artist-profile,
 .org-profile {
     background: #f8f8f8;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
     border-left: 4px solid #18bfef;
 }
 
 .artist-profile p,
 .org-profile p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     line-height: 1.7;
 }
 
@@ -228,13 +228,13 @@
 
 /* Image Gallery */
 .image-gallery {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .gallery-placeholder {
     background: linear-gradient(135deg, #f8f8f8 0%, #eeeeee 100%);
     border: 2px dashed #cccccc;
-    padding: 3rem;
+    padding: 2rem;
     text-align: center;
     border-radius: 8px;
     color: #888;
@@ -246,7 +246,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .gallery-image {
@@ -266,13 +266,13 @@
 .info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .info-item {
     background: #f8f8f8;
-    padding: 1.5rem;
+    padding: 1.25rem;
     border-radius: 8px;
 }
 
@@ -315,8 +315,8 @@
 
 @media screen and (max-width: 736px) {
     .project-section {
-        margin-bottom: 2rem;
-        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
     }
     
     .project-section h2 {
@@ -333,7 +333,7 @@
     
     .artist-profile,
     .org-profile {
-        padding: 1.5rem;
+        padding: 1.25rem;
     }
 }
 
