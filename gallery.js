@@ -90,9 +90,18 @@
         // Keyboard navigation
         document.addEventListener('keydown', function(e) {
             if (lightbox.style.display === 'block') {
-                if (e.key === 'Escape') closeLightbox();
-                if (e.key === 'ArrowLeft') prevImage();
-                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'Escape') {
+                    e.preventDefault();
+                    closeLightbox();
+                }
+                if (e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    prevImage();
+                }
+                if (e.key === 'ArrowRight') {
+                    e.preventDefault();
+                    nextImage();
+                }
             }
         });
 
@@ -107,7 +116,7 @@
                 // Make images keyboard accessible
                 img.setAttribute('tabindex', '0');
                 img.setAttribute('role', 'button');
-                img.addEventListener('keypress', function(e) {
+                img.addEventListener('keydown', function(e) {
                     if (e.key === 'Enter' || e.key === ' ') {
                         e.preventDefault();
                         openLightbox(images, index);
